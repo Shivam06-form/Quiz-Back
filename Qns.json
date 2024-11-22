@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "question": "What is the main use of Python?",
+            "answers": [
+                "Web Development",
+                "Data Analysis",
+                "Game Development",
+                "Machine Learning"
+            ],
+            "correct_answer": "Data Analysis",
+            "explanation": "Python is widely used for data manipulation and analysis, with libraries like Pandas and NumPy."
+        },
+        {
+            "question": "Which programming language is known as the language of the web?",
+            "answers": [
+                "JavaScript",
+                "Java",
+                "C++",
+                "Ruby"
+            ],
+            "correct_answer": "JavaScript",
+            "explanation": "JavaScript is the primary language used for creating interactive web pages and applications."
+        },
+        {
+            "question": "Which language is primarily used for Android app development?",
+            "answers": [
+                "Swift",
+                "Java",
+                "Kotlin",
+                "Objective-C"
+            ],
+            "correct_answer": "Java",
+            "explanation": "Java has been the main language for Android development, though Kotlin is now also widely used."
+        },
+        {
+            "question": "Which programming language is created by Apple for iOS development?",
+            "answers": [
+                "Python",
+                "Swift",
+                "C#",
+                "Ruby"
+            ],
+            "correct_answer": "Swift",
+            "explanation": "Swift was designed by Apple to work with iOS, macOS, and other Apple platforms, replacing Objective-C."
+        },
+        {
+            "question": "Which language is known for its use in machine learning and AI?",
+            "answers": [
+                "JavaScript",
+                "Python",
+                "C",
+                "PHP"
+            ],
+            "correct_answer": "Python",
+            "explanation": "Python is widely used in machine learning and AI due to its extensive libraries, like TensorFlow and scikit-learn."
+        },
+        {
+            "question": "Which language is commonly used for system programming and embedded systems?",
+            "answers": [
+                "Java",
+                "C",
+                "PHP",
+                "Ruby"
+            ],
+            "correct_answer": "C",
+            "explanation": "C is known for its low-level control over system resources, making it ideal for embedded systems and system programming."
+        },
+        {
+            "question": "Which language is primarily used for building web pages?",
+            "answers": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP"
+            ],
+            "correct_answer": "HTML",
+            "explanation": "HTML is the foundational markup language used to structure content on the web."
+        },
+        {
+            "question": "Which language is often used for creating server-side applications?",
+            "answers": [
+                "Ruby",
+                "Java",
+                "PHP",
+                "Swift"
+            ],
+            "correct_answer": "PHP",
+            "explanation": "PHP is a widely used scripting language designed specifically for web development and server-side applications."
+        },
+        {
+            "question": "Which language is known for its use in creating high-performance applications?",
+            "answers": [
+                "Go",
+                "Rust",
+                "Java",
+                "Python"
+            ],
+            "correct_answer": "Rust",
+            "explanation": "Rust is known for its memory safety features and high performance, making it ideal for system-level programming."
+        },
+        {
+            "question": "Which of the following is a popular JavaScript library for building user interfaces?",
+            "answers": [
+                "React",
+                "Vue",
+                "Angular",
+                "jQuery"
+            ],
+            "correct_answer": "React",
+            "explanation": "React is a popular JavaScript library for building user interfaces, particularly single-page applications."
+        }
+    ]
+}
