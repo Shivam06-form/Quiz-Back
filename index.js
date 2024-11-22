@@ -10,16 +10,16 @@ app.post('/api/create', (req, res, next) => {
 
     let User_List = []
 
-    fs.readFile(`${__dirname}/DataFolder/User.json`, 'utf-8', (err, data) => {
+    fs.readFile(`${__dirname}/User.json`, 'utf-8', (err, data) => {
         if (data) {
             const Data = (JSON.parse(data))
             User_List = [...Data, { name }]
-            fs.writeFile(`${__dirname}/Datafolder/User.json`, JSON.stringify(User_List), 'utf-8', err => {
+            fs.writeFile(`${__dirname}/User.json`, JSON.stringify(User_List), 'utf-8', err => {
                 console.log(err)
             })
         } else {
             User_List = [{ name }]
-            fs.writeFile(`${__dirname}/Datafolder/User.json`, JSON.stringify(User_List), 'utf-8', err => {
+            fs.writeFile(`${__dirname}/User.json`, JSON.stringify(User_List), 'utf-8', err => {
                 console.log(err)
             })
         }
@@ -31,7 +31,7 @@ app.post('/api/create', (req, res, next) => {
 
 // quizzes Qns
 app.get(`/api/quizzes`, (req, res, next) => {
-    fs.readFile(`${__dirname}/DataFolder/Qns.json`, 'utf-8', (err, data) => {
+    fs.readFile(`${__dirname}/Qns.json`, 'utf-8', (err, data) => {
         const Data = (JSON.parse(data))
         res.status(200).json({ Data })
     })
@@ -44,7 +44,7 @@ app.post('/api/quizzes/:id/submit', (req, res, next) => {
 
     let total = 0
 
-    fs.readFile(`${__dirname}/DataFolder/Qns.json`, 'utf-8', (err, data) => {
+    fs.readFile(`${__dirname}/Qns.json`, 'utf-8', (err, data) => {
         const Data = (JSON.parse(data))
         const Selected_Qns = req.body
 
@@ -67,18 +67,18 @@ app.post('/api/score', (req, res, next) => {
     console.log(score)
     let Game_List = []
 
-    fs.readFile(`${__dirname}/DataFolder/Score.json`, 'utf-8', (err, data) => {
+    fs.readFile(`${__dirname}/Score.json`, 'utf-8', (err, data) => {
         if (data) {
             const Data = (JSON.parse(data))
             Game_List = [...Data, { score: score, game: Data.length + 1, name: name }]
 
-            fs.writeFile(`${__dirname}/Datafolder/Score.json`, JSON.stringify(Game_List), 'utf-8', err => {
+            fs.writeFile(`${__dirname}/Score.json`, JSON.stringify(Game_List), 'utf-8', err => {
                 console.log(err)
             })
             res.status(201).json({ Data: Game_List })
         } else {
             Game_List = [{ score: score, game: 1, name: name }]
-            fs.writeFile(`${__dirname}/Datafolder/Score.json`, JSON.stringify(Game_List), 'utf-8', err => {
+            fs.writeFile(`${__dirname}/Score.json`, JSON.stringify(Game_List), 'utf-8', err => {
                 console.log(err)
             })
             res.status(200).json({ Data: Game_List })
